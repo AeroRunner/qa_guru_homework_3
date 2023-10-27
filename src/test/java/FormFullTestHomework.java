@@ -32,6 +32,7 @@ public class FormFullTestHomework {
         $(".react-datepicker__year-select").click();
         $(byValue("1999")).click();
         $(".react-datepicker__day--029").click();
+
         /*$("#currentAddress").setValue("Some street ");
         $("#permanentAddress").setValue("Another street 1");
         $("#submit").click();
