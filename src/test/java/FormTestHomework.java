@@ -55,9 +55,9 @@ public class FormTestHomework {
         $("[for='hobbies-checkbox-3']").click();
 
         $("#uploadPicture").uploadFile(new File("src/test/picture/testimage.png"));  // Импорт изображения
-        $("#currentAddress").setValue("Valentine 15 str.");               // Заполнение поля Current Address
-        $("#react-select-3-input").val("Rajasthan").pressEnter();    // Выбор страны
-        $("#react-select-4-input").val("Jaiselmer").pressEnter();    // Выбор города
+        $("#currentAddress").setValue("Valentine 15 str.");                                   // Заполнение поля Current Address
+        $("#react-select-3-input").val("Rajasthan").pressEnter();                        // Выбор страны
+        $("#react-select-4-input").val("Jaiselmer").pressEnter();                        // Выбор города
 
         // Кнопка Submit закрыта рекламой на сайте и click() по ней невозможен, поэтому можно выбрать ее ID выполнить команду ENTER
         $("#submit").pressEnter();
