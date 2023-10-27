@@ -12,9 +12,9 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class FormTestHomework {
 
-    @BeforeAll // Общие условия для тестов
+    @BeforeAll   // Общие условия для тестов
     static void beforeAll() {
-        Configuration.browserSize = "1920x1080"; //Разрешение
+        Configuration.browserSize = "1920x1080";      //Разрешение
         Configuration.baseUrl = "https://demoqa.com"; //Сайт на котором будут происходить все тесты
         Configuration.pageLoadStrategy = "eager";
         Configuration.holdBrowserOpen = true;
@@ -33,15 +33,9 @@ public class FormTestHomework {
         $("#userNumber").setValue("8888888888");           // Номер телефона
         $("#dateOfBirthInput").click();                    // Клик по блоку с выбором дня рождения
         $(".react-datepicker__year-select").click();       // Выбор выпадающего списка с годами
-        $(byValue("1999")).click();                                  // Выбор значения года
-
-        /* Вариант выбора месяца в списке, но есть проблема с нумерованием - список идет с 0 до 11, где 11 должно быть December
-         Но есть баг и выбирается November, про это было обсуждение в чате
-         $(".react-datepicker__month-select").click();
-         $(byValue("0")).click();*/
-
-        $(".react-datepicker__month-select").selectOption("December");   // Другой вариант выбора месяца через options, но пока тоже съезжает
-        $("[aria-label='Choose Wednesday, December 29th, 1999']").click();
+        $(byValue("1999")).click();                                   // Выбор значения года
+        $(".react-datepicker__month-select").selectOption("December");   // Выбор месяца
+        $("[aria-label='Choose Wednesday, December 29th, 1999']").click();    // Выбор дня
 
         // Выбор предметов
         $("#subjectsInput").val("Computer Science").pressEnter();
