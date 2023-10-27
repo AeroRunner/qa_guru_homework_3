@@ -1,3 +1,7 @@
+// Create by Dmitrii Elizarov (QAGURU_JAVA_23FLOW)
+//Time Spend - 6 hours
+// date - 27.10.2023
+
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
