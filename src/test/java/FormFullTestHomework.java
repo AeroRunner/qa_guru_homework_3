@@ -28,7 +28,10 @@ public class FormFullTestHomework {
         $("#userNumber").setValue("+7 7777777777");
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").click();
-        $(byValue("11")).click();
+        $(byValue("12")).click();
+        $(".react-datepicker__year-select").click();
+        $(byValue("1999")).click();
+        $(".react-datepicker__day--029").click();
         /*$("#currentAddress").setValue("Some street ");
         $("#permanentAddress").setValue("Another street 1");
         $("#submit").click();
