@@ -86,7 +86,6 @@ public class FormTestHomework {
 
 
         // Проверка введенных значений в модальном окне CSS
-
        $(".table-responsive").shouldHave(
                 text("Dmitrii Elizarov"),
                 text("airplay1x6@gmail.com"),
